@@ -743,7 +743,7 @@ dependencies = [
 [[package]]
 name = "solana-address"
 version = "2.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "bytemuck",
  "bytemuck_derive",
@@ -757,12 +757,12 @@ dependencies = [
 [[package]]
 name = "solana-define-syscall"
 version = "4.0.1"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 
 [[package]]
 name = "solana-derivation-path"
 version = "3.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "derivation-path",
  "qstring",
@@ -772,7 +772,7 @@ dependencies = [
 [[package]]
 name = "solana-instruction"
 version = "3.1.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "borsh",
  "serde",
@@ -784,7 +784,7 @@ dependencies = [
 [[package]]
 name = "solana-instruction-error"
 version = "2.1.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "num-traits",
  "solana-program-error",
@@ -793,7 +793,7 @@ dependencies = [
 [[package]]
 name = "solana-keypair"
 version = "3.1.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "ed25519-dalek",
  "five8",
@@ -807,12 +807,12 @@ dependencies = [
 [[package]]
 name = "solana-program-error"
 version = "3.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 
 [[package]]
 name = "solana-pubkey"
 version = "4.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "solana-address",
 ]
@@ -820,12 +820,12 @@ dependencies = [
 [[package]]
 name = "solana-sanitize"
 version = "3.0.1"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 
 [[package]]
 name = "solana-sdk-ids"
 version = "3.1.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "solana-address",
 ]
@@ -833,7 +833,7 @@ dependencies = [
 [[package]]
 name = "solana-seed-derivable"
 version = "3.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "solana-derivation-path",
 ]
@@ -841,7 +841,7 @@ dependencies = [
 [[package]]
 name = "solana-seed-phrase"
 version = "3.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "hmac",
  "pbkdf2 0.11.0",
@@ -851,7 +851,7 @@ dependencies = [
 [[package]]
 name = "solana-signature"
 version = "3.1.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "ed25519-dalek",
  "five8",
@@ -862,7 +862,7 @@ dependencies = [
 [[package]]
 name = "solana-signer"
 version = "3.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "solana-pubkey",
  "solana-signature",
@@ -872,7 +872,7 @@ dependencies = [
 [[package]]
 name = "solana-transaction-error"
 version = "3.0.0"
-source = "git+https://github.com/jupnet/jupnet-sdk#2b41f8258454247ffb385352b057e15b077fdacb"
+source = "git+https://github.com/jupnet/jupnet-sdk?branch=main#0d0ffb3cdfa7714588b1e99ea5575ab938861a84"
 dependencies = [
  "solana-instruction-error",
  "solana-sanitize",
