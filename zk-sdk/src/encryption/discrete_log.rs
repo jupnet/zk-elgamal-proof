@@ -105,9 +105,9 @@ impl DiscreteLog {
         since = "4.1.0",
         note = "Use `DiscreteLog::new_for_g` instead. The implementation is optimized for the Ristretto basepoint G only and will produce incorrect results for other generators."
     )]
+    #[allow(deprecated)]
     pub fn new(generator: RistrettoPoint, target: RistrettoPoint) -> Self {
         Self {
-            #[allow(deprecated)]
             generator,
             target,
             num_threads: None,
@@ -120,9 +120,9 @@ impl DiscreteLog {
     /// Discrete log instance constructor for a fixed generator.
     ///
     /// Default number of threads set to 1.
+    #[allow(deprecated)]
     pub fn new_for_g(target: RistrettoPoint) -> Self {
         Self {
-            #[allow(deprecated)]
             generator: G,
             target,
             num_threads: None,
