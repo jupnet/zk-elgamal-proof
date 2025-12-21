@@ -37,8 +37,9 @@ use {
     solana_derivation_path::DerivationPath,
     solana_seed_derivable::SeedDerivable,
     solana_seed_phrase::generate_seed_from_seed_phrase_and_passphrase,
+    jupnet_signer::Signer,
     solana_signature::Signature,
-    solana_signer::{EncodableKey, EncodableKeypair, Signer, SignerError},
+    solana_signer::{EncodableKey, EncodableKeypair, SignerError},
     std::{
         convert::TryInto,
         error, fmt,
@@ -515,10 +516,11 @@ impl ElGamalSecretKey {
         public_seed: &[u8],
     ) -> Result<Vec<u8>, SignerError> {
         let message = [b"ElGamalSecretKey", public_seed].concat();
-        let signature = signer.try_sign_message(&message)?;
+        let typed_signature = signer.try_sign_message(&message)?;
 
         // Some `Signer` implementations return the default signature, which is not suitable for
         // use as key material
+        let signature = typed_signature.get_signature();
         if bool::from(signature.as_ref().ct_eq(Signature::default().as_ref())) {
             return Err(SignerError::Custom("Rejecting default signatures".into()));
         }

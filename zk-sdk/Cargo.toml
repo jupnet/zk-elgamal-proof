@@ -39,6 +39,8 @@ solana-seed-derivable = { workspace = true }
 solana-seed-phrase = { workspace = true }
 solana-signature = { workspace = true }
 solana-signer = { workspace = true }
+jupnet-signer = { workspace = true }
+jupnet-signature = { workspace = true }
 subtle = { workspace = true }
 zeroize = { workspace = true, features = ["zeroize_derive"] }
 

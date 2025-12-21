@@ -52,6 +52,8 @@ solana-seed-derivable = { git = "https://github.com/jupnet/jupnet-sdk", branch =
 solana-seed-phrase = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
 solana-signature = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps", default-features = false }
 solana-signer = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+jupnet-signer = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
+jupnet-signature = { git = "https://github.com/jupnet/jupnet-sdk", branch = "fix/sdk-deps" }
 solana-zk-sdk = { path = "zk-sdk", version = "4.0.0" }
 solana-zk-sdk-wasm-js = { path = "zk-sdk-wasm-js", version = "0.1.0" }
 subtle = "2.6.1"

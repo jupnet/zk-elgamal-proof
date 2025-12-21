@@ -18,8 +18,9 @@ use {
     solana_derivation_path::DerivationPath,
     solana_seed_derivable::SeedDerivable,
     solana_seed_phrase::generate_seed_from_seed_phrase_and_passphrase,
+    jupnet_signer::Signer,
     solana_signature::Signature,
-    solana_signer::{EncodableKey, Signer, SignerError},
+    solana_signer::{EncodableKey, SignerError},
     std::{
         convert::TryInto,
         error, fmt,
@@ -113,10 +114,11 @@ impl AeKey {
         // TODO: This function uses a non-standard KDF and should be refactored.
         // See: https://github.com/solana-program/zk-elgamal-proof/issues/35
         let message = [b"AeKey", public_seed].concat();
-        let signature = signer.try_sign_message(&message)?;
+        let typed_signature = signer.try_sign_message(&message)?;
 
         // Some `Signer` implementations return the default signature, which is not suitable for
         // use as key material
+        let signature = typed_signature.get_signature();
         if bool::from(signature.as_ref().ct_eq(Signature::default().as_ref())) {
             return Err(SignerError::Custom("Rejecting default signature".into()));
         }
